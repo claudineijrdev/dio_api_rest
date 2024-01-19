@@ -1,0 +1,54 @@
+### CUSTOMER API
+
+### ADD CUSTOMER
+POST http://localhost:8080/customers HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Harry",
+    "surname": "Potter",
+    "email": "harry.potter@hogwarts.com"
+} 
+
+###
+
+POST http://localhost:8080/customers HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Ron",
+    "surname": "Weasley",
+    "email": "ron.weasley@hogwarts.com"
+} 
+
+###
+
+POST http://localhost:8080/customers HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Hermione",
+    "surname": "Granger",
+    "email": "hermione.granger@hogwarts.com"
+}  
+
+### GET ALL CUSTOMERS
+GET http://localhost:8080/customers HTTP/1.1
+
+
+### GET CUSTOMER BY ID
+GET http://localhost:8080/customers/3 HTTP/1.1
+
+### UPDATE CUSTOMER
+PUT http://localhost:8080/customers/2 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "2",
+    "name": "Draco",
+    "surname": "Malfoy",
+    "email": "draco.malfoy@hogwarts.com"
+}
+
+### DELETE CUSTOMER
+DELETE http://localhost:8080/customers/2 HTTP/1.1
